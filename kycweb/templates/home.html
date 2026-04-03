@@ -1,0 +1,364 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<form id="myForm" method="POST" enctype="multipart/form-data">
+    <div class="container py-4 py-xl-5">
+        <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3" style="background: var(--bs-white)">
+            <div class="col" style="padding-bottom: 0px">
+                <div class="text-center d-flex flex-column align-items-center align-items-xl-center">
+                    <div class="bs-icon-lg bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-3 bs-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 -32 576 576"
+                             width="1em"
+                             height="1em"
+                             fill="currentColor"
+                             style="font-size: 32px">
+                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                            <path d="M368 344h96c13.25 0 24-10.75 24-24s-10.75-24-24-24h-96c-13.25 0-24 10.75-24 24S354.8 344 368 344zM208 320c35.35 0 64-28.65 64-64c0-35.35-28.65-64-64-64s-64 28.65-64 64C144 291.3 172.7 320 208 320zM512 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h448c35.35 0 64-28.65 64-64V96C576 60.65 547.3 32 512 32zM528 416c0 8.822-7.178 16-16 16h-192c0-44.18-35.82-80-80-80h-64C131.8 352 96 387.8 96 432H64c-8.822 0-16-7.178-16-16V160h480V416zM368 264h96c13.25 0 24-10.75 24-24s-10.75-24-24-24h-96c-13.25 0-24 10.75-24 24S354.8 264 368 264z"></path>
+                        </svg>
+                    </div>
+                    <div class="px-3">
+                        <h4 id="pan_heading">PAN</h4>
+                        <p>Upload file</p>
+                        <input type="file" name="photo-pan" class="btn btn-primary file-field" id="pan-file-field" accept="image/*" style="
+              padding-right: 0px;
+              margin: 0;
+              margin-right: -22px;
+              color: var(--bs-primary);
+              background: var(--bs-body-bg);
+              transform: translate(37px);" />
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-center d-flex flex-column align-items-center align-items-xl-center">
+                    <div class="bs-icon-lg bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-3 bs-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 -32 576 576"
+                             width="1em"
+                             height="1em"
+                             fill="currentColor"
+                             style="font-size: 36px">
+                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                            <path d="M208 256c35.35 0 64-28.65 64-64c0-35.35-28.65-64-64-64s-64 28.65-64 64C144 227.3 172.7 256 208 256zM464 232h-96c-13.25 0-24 10.75-24 24s10.75 24 24 24h96c13.25 0 24-10.75 24-24S477.3 232 464 232zM240 288h-64C131.8 288 96 323.8 96 368C96 376.8 103.2 384 112 384h192c8.836 0 16-7.164 16-16C320 323.8 284.2 288 240 288zM464 152h-96c-13.25 0-24 10.75-24 24s10.75 24 24 24h96c13.25 0 24-10.75 24-24S477.3 152 464 152zM512 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h448c35.35 0 64-28.65 64-64V96C576 60.65 547.3 32 512 32zM528 416c0 8.822-7.178 16-16 16H64c-8.822 0-16-7.178-16-16V96c0-8.822 7.178-16 16-16h448c8.822 0 16 7.178 16 16V416z"></path>
+                        </svg>
+                    </div>
+                    <div class="px-3">
+                        <h4 id="aadhar_heading">Aadhar</h4>
+                        <p>Upload file</p>
+                        <input type="file" name="photo-aadhar" class="btn btn-primary file-field" id="aadhar-file-field" accept="image/*"
+                               style="padding-right: 0px;margin: 0;margin-right: -22px;color: var(--bs-primary);background: var(--bs-body-bg);transform: translate(37px)" />
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-center d-flex flex-column align-items-center align-items-xl-center">
+                    <div class="bs-icon-lg bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-3 bs-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 20 20"
+                             width="1em"
+                             height="1em"
+                             fill="currentColor"
+                             style="font-size: 36px">
+                            <path d="M15.475,6.692l-4.084-4.083C11.32,2.538,11.223,2.5,11.125,2.5h-6c-0.413,0-0.75,0.337-0.75,0.75v13.5c0,0.412,0.337,0.75,0.75,0.75h9.75c0.412,0,0.75-0.338,0.75-0.75V6.94C15.609,6.839,15.554,6.771,15.475,6.692 M11.5,3.779l2.843,2.846H11.5V3.779z M14.875,16.75h-9.75V3.25h5.625V7c0,0.206,0.168,0.375,0.375,0.375h3.75V16.75z"></path>
+                        </svg>
+                        <!--<i class="la la-file-text-o" style="font-size: 40px"></i>-->
+                    </div>
+                    <div class="px-3">
+                        <h4 id="gst_heading">GST</h4>
+                        <p>Upload file</p>
+                        <input type="file" name="photo-gst" class="btn btn-primary file-field" id="gst-file-field" accept="image/*"
+                               style="
+              padding-right: 0px;
+              margin: 0;
+              margin-right: -22px;
+              color: var(--bs-primary);
+              background: var(--bs-body-bg);
+              transform: translate(37px);" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-xl-6 text-center mx-auto">
+        <button type="submit" class="btn btn-primary w-60" onclick="bindContent()">Submit</button>
+    </div>
+
+    <input style="visibility: hidden" type="text" name="type" id="file_type">
+
+    <script>
+        function bindContent() {
+            var fileFields = document.querySelectorAll('.file-field');
+            for (var i = 0; i < fileFields.length; i++) {
+                if (fileFields[i].files.length > 0) {
+                    var heading = document.getElementById(fileFields[i].id.replace('-file-field', '_heading'));
+                    document.getElementById("file_type").value = heading.textContent;
+                    return;
+                }
+            }
+
+            document.getElementById("file_type").value = "";
+        }
+
+
+        $("form#myForm").submit(function (e) {
+            var formData = new FormData(this);
+            e.preventDefault();
+
+            var panFile = document.forms[0].elements['pan-file-field'].value.length === 0;
+            var aadharFile = document.forms[0].elements['aadhar-file-field'].value.length === 0;
+            var gstFile = document.forms[0].elements['gst-file-field'].value.length === 0;
+
+            if (panFile && aadharFile && gstFile) {
+                alert("Please select at least one file before submitting.");
+                e.preventDefault();
+            }
+            else {
+
+                $('#loadingDiv').css('display', 'block');
+                $('#result').css('visibility', 'hidden');
+                $('#panResult').css('display', 'none');
+                $('#aadharResult').css('display', 'none');
+                $('#gstResult').css('display', 'none');
+
+
+                $.ajax({
+                    url: '/upload',
+                    type: 'POST',
+                    data: formData,
+                    success: function (data) {
+                       // alert(JSON.stringify(data));
+                        $('#loadingDiv').css('display', 'none');
+                        switch (document.getElementById("file_type").value) {
+                            case 'PAN':
+                                $('#result').css('visibility', 'visible');
+                                $('#panResult').css('display', 'block');
+                                $('#panName').val(data.fields.Name);
+                                $('#panFathersName').val(data.fields.FatherName);
+                                $('#panNum').val(data.fields.PANNo);
+                                $('#panDob').val(data.fields.DateOfBirth);
+                                $("#pan-file-field").val("");
+                                break;
+                            case 'Aadhar':
+                                $('#result').css('visibility', 'visible');
+                                $('#aadharResult').css('display', 'block');
+                                $('#aadharName').val(data.fields.Name);
+                                $('#aadharDob').val(data.fields.DateofBirth);
+                                $('#aadharGender').val(data.fields.Gender);
+                                $('#aadharNum').val(data.fields.AadharNo);
+                                $("#aadhar-file-field").val("");
+                                break;
+                            case 'GST':
+                                $('#result').css('visibility', 'visible');
+                                $('#gstResult').css('display', 'block');
+                                $('#gstRegNo').val(data.fields.registration_number);
+                                $('#gstLegalName').val(data.fields.legal_name);
+                                $('#gstTradeName').val(data.fields.trade_name);
+                                $('#gstAddress').val(data.fields.address);
+                                $('#gstDateOfLiability').val(data.fields.date_of_liability);
+                                $('#gstPeriodOfValidity').val(data.fields.date_of_issue);
+                                $('#gstTo').val(data.fields.To);
+                                $('#gstRegType').val(data.fields.type_of_registration);
+                                $('#gstCoB').val(data.fields.CoB);
+                                $("#gst-file-field").val("");
+                                break;
+                            default:
+                                alert("incorrect value selected");
+                        }
+                    },
+                    error: function (textStatus, errorThrown) {
+                        debugger;
+                        alert(textStatus);
+                    },
+                    contentType: false,
+                    processData: false
+                });
+            }
+        });
+    </script>
+
+    <div id="loadingDiv" class="col-md-8 col-xl-6 text-center mx-auto" style="display: none">
+        <div class="text-xs-center">
+            <i class="fa fa-cog fa-spin" style="font-size:24px"></i>
+            <p>Processing...</p>
+        </div>
+    </div>
+
+    <!-- End: Features Centered Icons -->
+    <div id="result" style="visibility: hidden" class="container">
+        <div class="col-md-8 col-xl-6 text-center mx-auto">
+            <div class="col-md-12 col-xl-6text-center mx-auto">
+                <h3>Extracted Information</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start: Extracted Information -->
+
+    <div class="container" id="panResult" style="display: none">
+
+        <!-- Start: PAN  -->
+        <h4>PAN card details</h4>
+        <div class="row" style="width: 897px">
+            <div class="col-xl-2" style="width: 250px">
+                <label class="col-form-label" style="font-size: 19px">Name.: </label>
+            </div>
+            <div class="col" style="width: 430px">
+                <input id="panName" class="form-control" readonly type="text" />
+            </div>
+        </div>
+        <div class="row" style="width: 897px">
+            <div class="col-xl-2" style="width: 250px">
+                <label class="col-form-label" style="font-size: 19px">Father's Name.:</label>
+            </div>
+            <div class="col" style="width: 430px">
+                <input id="panFathersName" class="form-control" readonly type="text" />
+            </div>
+        </div>
+        <div class="row" style="width: 897px">
+            <div class="col-xl-2" style="width: 250px">
+                <label class="col-form-label" style="font-size: 19px">DOB:</label>
+            </div>
+            <div class="col" style="width: 430px">
+                <input id="panDob" class="form-control" readonly type="text" />
+            </div>
+        </div>
+        <div class="row" style="width: 897px">
+            <div class="col-xl-2" style="width: 250px">
+                <label class="col-form-label" style="font-size: 19px">PAN:</label>
+            </div>
+            <div class="col" style="width: 430px">
+                <input id="panNum" class="form-control" readonly type="text" />
+            </div>
+        </div>
+    </div>
+    <!-- End: PAN  -->
+
+
+
+    <div class="container" id="aadharResult" style="display: none">
+
+        <!-- Start: Aadhar  -->
+
+
+        <h4>Aadhar card details</h4>
+        <div class="row" style="width: 897px">
+            <div class="col-xl-2" style="width: 250px">
+                <label class="col-form-label" style="font-size: 19px">Name.:</label>
+            </div>
+            <div class="col" style="width: 430px">
+                <input id="aadharName" class="form-control" readonly type="text" />
+            </div>
+        </div>
+        <div class="row" style="width: 897px">
+            <div class="col-xl-2" style="width: 250px">
+                <label class="col-form-label" style="font-size: 19px">DOB:</label>
+            </div>
+            <div class="col" style="width: 430px">
+                <input id="aadharDob" class="form-control" readonly type="text" />
+            </div>
+        </div>
+        <div class="row" style="width: 897px">
+            <div class="col-xl-2" style="width: 250px">
+                <label class="col-form-label" style="font-size: 19px">Gender:</label>
+            </div>
+            <div class="col" style="width: 430px">
+                <input id="aadharGender" class="form-control" readonly type="text" />
+            </div>
+        </div>
+        <div class="row" style="width: 897px">
+            <div class="col-xl-2" style="width: 250px">
+                <label class="col-form-label" style="font-size: 19px">Aadhar No.:</label>
+            </div>
+            <div class="col" style="width: 430px">
+                <input id="aadharNum" class="form-control" readonly type="text" />
+            </div>
+        </div>
+
+        <!-- End: Aadhar  -->
+    </div>
+
+
+
+    <div class="container" id="gstResult" style="display: none">
+
+        <h4>GST certificate details</h4>
+        <div class="row" style="width: 897px">
+            <div class="col-xl-2" style="width: 250px">
+                <label class="col-form-label" style="font-size: 19px">Registration No.:</label>
+            </div>
+            <div class="col" style="width: 430px">
+                <input id="gstRegNo" class="form-control" readonly type="text" />
+            </div>
+        </div>
+        <div class="row" style="width: 897px">
+            <div class="col-xl-2" style="width: 250px">
+                <label class="col-form-label" style="font-size: 19px">Legal Name:</label>
+            </div>
+            <div class="col" style="width: 430px">
+                <input id="gstLegalName" class="form-control" readonly type="text" />
+            </div>
+        </div>
+        <div class="row" style="width: 897px">
+            <div class="col-xl-2" style="width: 250px">
+                <label class="col-form-label" style="font-size: 19px">Trade Name:</label>
+            </div>
+            <div class="col" style="width: 430px">
+                <input id="gstTradeName" class="form-control" readonly type="text" />
+            </div>
+        </div>
+        <div class="row" style="width: 897px">
+            <div class="col-xl-2" style="width: 250px">
+                <label class="col-form-label" style="font-size: 19px">Constitution of Business:</label>
+            </div>
+            <div class="col" style="width: 430px">
+                <input id="gstCoB" class="form-control" readonly type="text" />
+            </div>
+        </div>
+        <div class="row" style="width: 897px">
+            <div class="col-xl-2" style="width: 250px">
+                <label class="col-form-label" style="font-size: 19px">Address:</label>
+            </div>
+            <div class="col" style="width: 430px">
+                <input id="gstAddress" class="form-control" readonly type="text" />
+            </div>
+        </div>
+        <div class="row" style="width: 897px">
+            <div class="col-xl-2" style="width: 250px">
+                <label class="col-form-label" style="font-size: 19px">Date of Liability:</label>
+            </div>
+            <div class="col" style="width: 430px">
+                <input id="gstDateOfLiability" class="form-control" readonly type="text" />
+            </div>
+        </div>
+        <div class="row" style="width: 897px">
+            <div class="col-xl-2" style="width: 250px">
+                <label class="col-form-label" style="font-size: 19px">Period of Validity:</label>
+            </div>
+            <div class="col-xl-2" style="width: 100px">
+                <label class="col-form-label" style="font-size: 19px">From:</label>
+            </div>
+            <div class="col" style="width: 430px">
+                <input id="gstPeriodOfValidity" class="form-control" readonly type="text" />
+            </div>
+            <div class="col-xl-2" style="width: 100px">
+                <label class="col-form-label" style="font-size: 19px">To:</label>
+            </div>
+            <div class="col" style="width: 430px">
+                <input id="gstTo" class="form-control" readonly type="text" />
+            </div>
+        </div>
+        <div class="row" style="width: 897px">
+            <div class="col-xl-2" style="width: 250px">
+                <label class="col-form-label" style="font-size: 19px">Type of Registration:</label>
+            </div>
+            <div class="col" style="width: 430px">
+                <input id="gstRegType" class="form-control" readonly type="text" />
+            </div>
+        </div>
+    </div>
+    <!-- End: GST  -->
+    {% endblock %}

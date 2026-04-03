@@ -1,0 +1,145 @@
+##########################################################################
+
+######################## Raw Output #############################
+
+P INCOME TAX DEPARTMENT . ib, GOVT. OF INDIA
+DMANIKANDAN
+DURAISAMY .
+16/07/1986
+Permanent Account Number
+BNZPM2501F
+poroandeaaial
+Signature
+
+
+######################## Cleaned Output #############################
+
+PANNo : BNZPM2501F
+DateOfBirth : 16/07/1986
+Name : DMANIKANDAN
+FatherName : DURAISAMY
+##########################################################################
+
+##########################################################################
+
+######################## Raw Output #############################
+
+P INCOME TAX DEPARTMENT . ib, GOVT. OF INDIA
+DMANIKANDAN
+DURAISAMY .
+16/07/1986
+Permanent Account Number
+BNZPM2501F
+poroandeaaial
+Signature
+
+
+######################## Cleaned Output #############################
+
+PANNo : BNZPM2501F
+DateOfBirth : 16/07/1986
+Name : DMANIKANDAN
+FatherName : DURAISAMY
+##########################################################################
+
+##########################################################################
+
+######################## Raw Output #############################
+
+Governmntof Indiaz
+TUT
+Sutapa Pal Datta
+Date of Birth/DOB 26/01/1979
+Female/ FEMALE
+6641 2804 9316
+Fr 3Trestsz, FIRT Weslo
+
+
+######################## Cleaned Output #############################
+
+AadharNo : 6641 2804 9316
+Gender : Female
+DateofBirth : 26/01/1979
+Name : Sutapa Pal Datta
+##########################################################################
+
+##########################################################################
+
+######################## Raw Output #############################
+
+Registration Number 9ZKFFFH2701D6LR.
+Chai Lal Upadhay
+Legal Name
+Chai Lelo Chai Pvt Ltd
+2. Trade Name, if any
+Proprietorship
+Constitution of Business
+Address of Principal Place of
+Chai road, opposite to chai palace, CA 90210
+Business
+Date of Liability
+30/01/2022
+Period of Validity
+130/01/2022 To
+From
+Type of Registration
+Regular
+
+
+######################## Cleaned Output #############################
+
+registration_number : 9ZKFFFH2701D6LR
+legal_name : Chai Lal Upadhay
+trade_name : Chai Lelo Chai Pvt Ltd
+date_of_liability : 30/01/2022
+date_of_issue : 30/01/2022
+address : Chai road, opposite to chai palace, CA 90210
+To : NA
+CoB : Proprietorship
+type_of_registration : Regular
+##########################################################################
+
+##########################################################################
+
+######################## Raw Output #############################
+
+P INCOME TAX DEPARTMENT . ib, GOVT. OF INDIA
+DMANIKANDAN
+DURAISAMY .
+16/07/1986
+Permanent Account Number
+BNZPM2501F
+poroandeaaial
+Signature
+
+
+######################## Cleaned Output #############################
+
+PANNo : BNZPM2501F
+DateOfBirth : 16/07/1986
+Name : DMANIKANDAN
+FatherName : DURAISAMY
+##########################################################################
+
+##########################################################################
+
+######################## Raw Output #############################
+
+P INCOME TAX DEPARTMENT . ib, GOVT. OF INDIA
+DMANIKANDAN
+DURAISAMY .
+16/07/1986
+Permanent Account Number
+BNZPM2501F
+poroandeaaial
+Signature
+
+
+######################## Cleaned Output #############################
+
+PANNo : BNZPM2501F
+DateOfBirth : 16/07/1986
+Name : DMANIKANDAN
+FatherName : DURAISAMY
+##########################################################################
+

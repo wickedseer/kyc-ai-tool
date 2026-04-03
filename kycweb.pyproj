@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>1df5857e-18bf-45db-b339-fe6124529a5c</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost:5555</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>kycweb</Name>
+    <RootNamespace>kycweb</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.7</InterpreterId>
+    <WebBrowserPort>5555</WebBrowserPort>
+    <TestFramework>Pytest</TestFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="kycweb\aadhar.py" />
+    <Compile Include="kycweb\cheque.py" />
+    <Compile Include="kycweb\ctpn\demo.py" />
+    <Compile Include="kycweb\ctpn\demo_pb.py" />
+    <Compile Include="kycweb\ctpn\generate_pb.py" />
+    <Compile Include="kycweb\ctpn\train_net.py" />
+    <Compile Include="kycweb\ctpn\__init__.py" />
+    <Compile Include="kycweb\face_matching.py" />
+    <Compile Include="kycweb\lib\datasets\factory.py" />
+    <Compile Include="kycweb\lib\datasets\imdb.py" />
+    <Compile Include="kycweb\lib\datasets\pascal_voc.py" />
+    <Compile Include="kycweb\lib\datasets\__init__.py" />
+    <Compile Include="kycweb\lib\fast_rcnn\bbox_transform.py" />
+    <Compile Include="kycweb\lib\fast_rcnn\config.py" />
+    <Compile Include="kycweb\lib\fast_rcnn\nms_wrapper.py" />
+    <Compile Include="kycweb\lib\fast_rcnn\test.py" />
+    <Compile Include="kycweb\lib\fast_rcnn\train.py" />
+    <Compile Include="kycweb\lib\fast_rcnn\__init__.py" />
+    <Compile Include="kycweb\lib\networks\factory.py" />
+    <Compile Include="kycweb\lib\networks\network.py" />
+    <Compile Include="kycweb\lib\networks\VGGnet_test.py" />
+    <Compile Include="kycweb\lib\networks\VGGnet_train.py" />
+    <Compile Include="kycweb\lib\networks\__init__.py" />
+    <Compile Include="kycweb\lib\prepare_training_data\split_label.py" />
+    <Compile Include="kycweb\lib\prepare_training_data\ToVoc.py" />
+    <Compile Include="kycweb\lib\roi_data_layer\layer.py" />
+    <Compile Include="kycweb\lib\roi_data_layer\minibatch.py" />
+    <Compile Include="kycweb\lib\roi_data_layer\roidb.py" />
+    <Compile Include="kycweb\lib\roi_data_layer\__init__.py" />
+    <Compile Include="kycweb\lib\rpn_msr\anchor_target_layer_tf.py" />
+    <Compile Include="kycweb\lib\rpn_msr\generate_anchors.py" />
+    <Compile Include="kycweb\lib\rpn_msr\proposal_layer_tf.py" />
+    <Compile Include="kycweb\lib\rpn_msr\__init__.py" />
+    <Compile Include="kycweb\lib\text_connector\detectors.py" />
+    <Compile Include="kycweb\lib\text_connector\other.py" />
+    <Compile Include="kycweb\lib\text_connector\text_connect_cfg.py" />
+    <Compile Include="kycweb\lib\text_connector\text_proposal_connector.py" />
+    <Compile Include="kycweb\lib\text_connector\text_proposal_connector_oriented.py" />
+    <Compile Include="kycweb\lib\text_connector\text_proposal_graph_builder.py" />
+    <Compile Include="kycweb\lib\text_connector\__init__.py" />
+    <Compile Include="kycweb\lib\utils\blob.py" />
+    <Compile Include="kycweb\lib\utils\boxes_grid.py" />
+    <Compile Include="kycweb\lib\utils\setup.py" />
+    <Compile Include="kycweb\lib\utils\timer.py" />
+    <Compile Include="kycweb\lib\utils\__init__.py" />
+    <Compile Include="kycweb\lib\__init__.py" />
+    <Compile Include="kycweb\pan.py" />
+    <Compile Include="kycweb\processing.py" />
+    <Compile Include="runserver.py" />
+    <Compile Include="kycweb\__init__.py" />
+    <Compile Include="kycweb\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="kycweb\" />
+    <Folder Include="kycweb\ctpn\" />
+    <Folder Include="kycweb\ctpn\__pycache__\" />
+    <Folder Include="kycweb\data\" />
+    <Folder Include="kycweb\lib\" />
+    <Folder Include="kycweb\lib\datasets\" />
+    <Folder Include="kycweb\lib\fast_rcnn\" />
+    <Folder Include="kycweb\lib\fast_rcnn\__pycache__\" />
+    <Folder Include="kycweb\lib\networks\" />
+    <Folder Include="kycweb\lib\prepare_training_data\" />
+    <Folder Include="kycweb\lib\roi_data_layer\" />
+    <Folder Include="kycweb\lib\rpn_msr\" />
+    <Folder Include="kycweb\lib\rpn_msr\__pycache__\" />
+    <Folder Include="kycweb\lib\text_connector\" />
+    <Folder Include="kycweb\lib\text_connector\__pycache__\" />
+    <Folder Include="kycweb\lib\utils\" />
+    <Folder Include="kycweb\lib\utils\__pycache__\" />
+    <Folder Include="kycweb\SAMPLE_INPUTS\" />
+    <Folder Include="kycweb\static\" />
+    <Folder Include="kycweb\static\content\" />
+    <Folder Include="kycweb\static\fonts\" />
+    <Folder Include="kycweb\static\scripts\" />
+    <Folder Include="kycweb\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="kycweb\ctpn\text.yml" />
+    <Content Include="kycweb\ctpn\__pycache__\demo_pb.cpython-37.pyc" />
+    <Content Include="kycweb\ctpn\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="kycweb\data\ctpn.pb" />
+    <Content Include="kycweb\data\VOCdevkit2007" />
+    <Content Include="kycweb\lib\fast_rcnn\__pycache__\bbox_transform.cpython-37.pyc" />
+    <Content Include="kycweb\lib\fast_rcnn\__pycache__\config.cpython-37.pyc" />
+    <Content Include="kycweb\lib\fast_rcnn\__pycache__\nms_wrapper.cpython-37.pyc" />
+    <Content Include="kycweb\lib\fast_rcnn\__pycache__\test.cpython-37.pyc" />
+    <Content Include="kycweb\lib\fast_rcnn\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="kycweb\lib\rpn_msr\__pycache__\generate_anchors.cpython-37.pyc" />
+    <Content Include="kycweb\lib\rpn_msr\__pycache__\proposal_layer_tf.cpython-37.pyc" />
+    <Content Include="kycweb\lib\rpn_msr\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="kycweb\lib\text_connector\__pycache__\detectors.cpython-37.pyc" />
+    <Content Include="kycweb\lib\text_connector\__pycache__\other.cpython-37.pyc" />
+    <Content Include="kycweb\lib\text_connector\__pycache__\text_connect_cfg.cpython-37.pyc" />
+    <Content Include="kycweb\lib\text_connector\__pycache__\text_proposal_connector.cpython-37.pyc" />
+    <Content Include="kycweb\lib\text_connector\__pycache__\text_proposal_connector_oriented.cpython-37.pyc" />
+    <Content Include="kycweb\lib\text_connector\__pycache__\text_proposal_graph_builder.cpython-37.pyc" />
+    <Content Include="kycweb\lib\text_connector\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="kycweb\lib\utils\bbox.c" />
+    <Content Include="kycweb\lib\utils\bbox.pyx" />
+    <Content Include="kycweb\lib\utils\cython_nms.c" />
+    <Content Include="kycweb\lib\utils\cython_nms.pyx" />
+    <Content Include="kycweb\lib\utils\gpu_nms.c" />
+    <Content Include="kycweb\lib\utils\gpu_nms.cpp" />
+    <Content Include="kycweb\lib\utils\gpu_nms.hpp" />
+    <Content Include="kycweb\lib\utils\gpu_nms.pyx" />
+    <Content Include="kycweb\lib\utils\make.sh" />
+    <Content Include="kycweb\lib\utils\nms_kernel.cu" />
+    <Content Include="kycweb\lib\utils\__pycache__\blob.cpython-37.pyc" />
+    <Content Include="kycweb\lib\utils\__pycache__\boxes_grid.cpython-37.pyc" />
+    <Content Include="kycweb\lib\utils\__pycache__\timer.cpython-37.pyc" />
+    <Content Include="kycweb\lib\utils\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="kycweb\SAMPLE_INPUTS\1.jpg" />
+    <Content Include="kycweb\SAMPLE_INPUTS\2.jpg" />
+    <Content Include="kycweb\SAMPLE_INPUTS\back.jpg" />
+    <Content Include="kycweb\SAMPLE_INPUTS\cheque1.jpg" />
+    <Content Include="kycweb\SAMPLE_INPUTS\front.jpg" />
+    <Content Include="kycweb\SAMPLE_INPUTS\pana.jpg" />
+    <Content Include="kycweb\SAMPLE_INPUTS\pan_card_1.jpg" />
+    <Content Include="requirements.txt" />
+    <Content Include="kycweb\static\content\bootstrap.css" />
+    <Content Include="kycweb\static\content\bootstrap.min.css" />
+    <Content Include="kycweb\static\content\site.css" />
+    <Content Include="kycweb\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="kycweb\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="kycweb\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="kycweb\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="kycweb\static\scripts\bootstrap.js" />
+    <Content Include="kycweb\static\scripts\bootstrap.min.js" />
+    <Content Include="kycweb\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="kycweb\static\scripts\jquery-1.10.2.js" />
+    <Content Include="kycweb\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="kycweb\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="kycweb\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="kycweb\static\scripts\jquery.validate.js" />
+    <Content Include="kycweb\static\scripts\jquery.validate.min.js" />
+    <Content Include="kycweb\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="kycweb\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="kycweb\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="kycweb\static\scripts\respond.js" />
+    <Content Include="kycweb\static\scripts\respond.min.js" />
+    <Content Include="kycweb\static\scripts\_references.js" />
+    <Content Include="kycweb\templates\about.html" />
+    <Content Include="kycweb\templates\contact.html" />
+    <Content Include="kycweb\templates\index.html" />
+    <Content Include="kycweb\templates\layout.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.7" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

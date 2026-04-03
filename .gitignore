@@ -1,0 +1,12 @@
+env/
+venv/
+ENV/
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.pb
+*.dat
+*.h5
+*.pkl
+.env

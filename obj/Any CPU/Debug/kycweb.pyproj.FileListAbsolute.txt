@@ -1,0 +1,2 @@
+C:\Vridhi\kyc\kycweb\kycweb\kycweb\obj\Any CPU\Debug\kycweb.pyproj.SuggestedBindingRedirects.cache
+C:\Vridhi\kyc\kycweb\kycweb\kycweb\obj\Any CPU\Debug\kycweb.pyproj.CoreCompileInputs.cache
