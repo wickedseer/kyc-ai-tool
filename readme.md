@@ -12,8 +12,8 @@ An intelligent document processing system that automates the extraction and veri
   - [Installation](#installation)
   - [Usage](#usage)
   - [API Endpoints](#api-endpoints)
-  - [Demo](#demo)
-  - [Research Papers](#research-papers)
+  - [Demo Video](#demo-video)
+  - [Published Research Papers](#published-research-papers)
 
 
 ## Overview
@@ -38,7 +38,6 @@ The system accepts images of identity documents, preprocesses them for optimal O
 | Document | Extracted Fields |
 |----------|-----------------|
 | Aadhaar Card (Front) | Name, Date of Birth, Gender, Aadhaar Number |
-| Aadhaar Card (Back) | Full Address |
 | PAN Card | PAN Number, Name, Father's Name, Date of Birth |
 | GST Certificate | Registration Number, Legal Name, Trade Name, Date of Liability, Date of Issue, Address, Type of Registration |
 
@@ -67,7 +66,7 @@ The system accepts images of identity documents, preprocesses them for optimal O
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com//kyc-ai-tool.git
+   git clone https://github.com/wickedseer/kyc-ai-tool.git
    cd kyc-ai-tool
    ```
 
@@ -163,25 +162,18 @@ Uploads a document image and returns extracted fields.
 ```
 
 
-## Demo
+## Demo Video
 
->**Demo Video**  
-> https://github.com/user-attachments/assets/04dd5d67-8548-4c94-8245-a6b4975f8270
-
+https://github.com/user-attachments/assets/04dd5d67-8548-4c94-8245-a6b4975f8270
 
 
-## Research Papers
+## Published Research Papers
 
-> **Published Research Papers**
->
-> **Title:** A Comprehensive Survey of Identity Document Data Extraction Techniques for Efficient KYC Verification and Identity Management  
-> **Published in:** International Research Journal of Engineering and Technology (IRJET)  
-> **Link:** https://www.irjet.net/archives/V10/i12/IRJET-V10I12125.pdf
->
-> ---
->
-> **Title:** An Efficient OCR System for Extracting Information from Indian Identity Documents using CTPN  
-> **Published in:** Ajeenkya DY Patil Journal of Innovation in Engineering & Technology  
-> **Link:** https://adypsoe.in/adypjiet/assets/publications/2024/Dec/R3-ADYPJIET-An-Efficient-OCR-System-for-Extracting.pdf
+**Title:** A Comprehensive Survey of Identity Document Data Extraction Techniques for Efficient KYC Verification and Identity Management    
+**Published in:** International Research Journal of Engineering and Technology (IRJET)     
+**Link:** https://www.irjet.net/archives/V10/i12/IRJET-V10I12125.pdf
 
----
+
+**Title:** An Efficient OCR System for Extracting Information from Indian Identity Documents using CTPN  
+**Published in:** Ajeenkya DY Patil Journal of Innovation in Engineering & Technology  
+**Link:** https://adypsoe.in/adypjiet/assets/publications/2024/Dec/R3-ADYPJIET-An-Efficient-OCR-System-for-Extracting.pdf
