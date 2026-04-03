@@ -165,10 +165,9 @@ Uploads a document image and returns extracted fields.
 
 ## Demo
 
->**Demo Video**
->
->
-> 
+>**Demo Video**  
+> https://github.com/user-attachments/assets/04dd5d67-8548-4c94-8245-a6b4975f8270
+
 
 
 ## Research Papers
